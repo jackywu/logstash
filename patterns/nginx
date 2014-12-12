@@ -1,0 +1,1 @@
+NGINXACCESS %{IPORHOST:clientip} - %{USER:ident} \[%{HTTPDATE:timestamp}\] "%{WORD:verb} %{URIPATHPARAM:request} HTTP/%{NUMBER:httpversion}" %{NUMBER:code} %{NUMBER:bytes} "%{URI:referrer}" "%{GREEDYDATA:agent}" "%{GREEDYDATA:xforwardfor}"
